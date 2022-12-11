@@ -2,7 +2,6 @@ import { Command } from './command';
 import { CacheType, Client, CommandInteraction, Interaction, CommandInteractionOption, TextChannel } from 'discord.js';
 import { REST } from '@discordjs/rest';
 import {  Routes } from 'discord-api-types/v10';
-import { Postgres } from '../../services/postgres';
 
 export function serializeCommand(command: CommandInteraction<CacheType>): string {
   const options: string[] = [];
