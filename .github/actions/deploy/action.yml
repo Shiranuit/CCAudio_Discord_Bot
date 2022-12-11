@@ -26,7 +26,7 @@ runs:
         with:
           host: ${{ inputs.SSH_HOST }}
           username: ${{ inputs.SSH_USERNAME }}
-          key: ${{ inputs.SSH_DEPLOY_KEY }}
+          password: ${{ inputs.SSH_PASSWORD }}
           port: ${{ inputs.SSH_PORT }}
           script: |
             set -a
