@@ -14,8 +14,6 @@ RUN npm ci
 ADD ./app.ts ./app.ts
 ADD ./src ./src
 
-ADD ./config.ts ./config.ts
-
 RUN npm run build
 
 
