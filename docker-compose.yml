@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  backend:
+    build: ./backend
+    working_dir: /var/app
+    environment:
+      NODE_ENV: development
+      DISCORD_TOKEN: ${CCAUDIO_DISCORD_TOKEN}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-database}
+      DB_NAME: ${DB_NAME:-database}
+      DB_USER: ${DB_USER:-database}
+      DB_USER_PASSWORD: ${DB_USER_PASSWORD:-database}
+    ports:
+      - "80:8080"
